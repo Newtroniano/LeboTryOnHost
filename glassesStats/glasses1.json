@@ -1,0 +1,51 @@
+{
+    "name": "Óculos Redondo",
+    "price": 150,
+    "description": "A pair of stylish glasses that enhance your vision.",
+    "parts": [
+        {
+            "title": "Frame",
+            "modelURL": "models/glassesFrame.glb",
+            "textures": [
+            {
+                "name":"yellow",
+                "previewColor":"#FFFF00",
+                "url":"models/img/yellow.png"
+            },
+            {
+                "name":"purple",
+                "previewColor":"#ea00ff",
+                "url":"models/img/purple.png"
+            },
+            {
+                "name":"white",
+                "previewColor":"#FFFFFF",
+                "url":"models/img/white.png"
+            }]
+        },
+        {
+            "title": "Arms",
+            "modelURL": "models/glassesArms.glb",
+            "textures": [
+            {
+                "name":"yellow",
+                "previewColor":"#FFFF00",
+                "url":"models/img/yellow.png"
+            },
+            {
+                "name":"purple",
+                "previewColor":"#ea00ff",
+                "url":"models/img/purple.png"
+            },
+            {
+                "name":"white",
+                "previewColor":"#FFFFFF",
+                "url":"models/img/white.png"
+            }]
+        },
+        {
+            "title": "Lens",
+            "modelURL": "models/glassesLenses.glb"
+        }
+    ]
+}

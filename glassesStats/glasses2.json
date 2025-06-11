@@ -1,0 +1,11 @@
+{
+    "name": "Óculos de Grau",
+    "price": 110,
+    "description": "A pair of stylish glasses that encoool your vision.",
+    "parts": [
+        {
+            "title": "Frame",
+            "modelURL": "models/newGlasses2.glb"
+        }
+    ]
+}

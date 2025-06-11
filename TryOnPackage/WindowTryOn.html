@@ -1,0 +1,41 @@
+<div class="dualWindowLayout" id="tryOnContainer">
+    <div id="cameraView">
+        <a-scene mindar-face="autoOccluder: false" embedded color-space="sRGB"
+        renderer="colorManagement: true, physicallyCorrectLights"
+        xr-mode-ui="enabled: false"
+        embedded="enabled: false"
+        device-orientation-permission-ui="enabled: false">
+            <a-assets id="textureAssets">
+                <a-asset-item id="headModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/face-tracking/assets/sparkar/headOccluder.glb"></a-asset-item>
+            </a-assets>
+            <a-assets>
+                <a-asset-item id="circleOccluder" src="./models/circleOccluder.glb"></a-asset-item>
+            </a-assets>
+            <a-camera id="cameraID" active="false" position="0 0 0" wasd-controls-enabled="false">
+                <a-entity light="color: #AAA; intensity: 2" position="-1 1 2"></a-entity>
+                <a-entity mindar-face-target="anchorIndex: 168">
+                    <a-gltf-model mindar-face-occluder position="0 -0.25 0.15" rotation="0 0 0" scale="0.060 0.06 0.06" src="#headModel" ></a-gltf-model>
+                    <a-gltf-model mindar-face-occluder position="0 0 -1.45" rotation="0 0 0" scale="7.75 7.75 7.75" src="#circleOccluder" ></a-gltf-model>
+                </a-entity>
+                <a-entity id="modelEntityID" mindar-face-target="anchorIndex: 168" >
+                </a-entity>
+            </a-camera>
+        </a-scene>
+    </div>
+    <div id="controllers">
+        <div id="titleDiv">
+            <div id="titleNameDiv">
+                <h1 id="glassesTitle">Glasses Name</h1>
+            </div>
+            <div id="closeButtonDiv">
+                <button id="closeButton"></button>
+            </div>
+        </div>
+        <div id="partsDiv">
+        </div>
+        <div id="bottomDiv">
+            <p id="price">Price</p>
+            <button class="controllerButton" id="addToCartButton">Add to Cart</button>
+        </div>
+    </div>
+</div>

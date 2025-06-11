@@ -1,0 +1,107 @@
+.dualWindowLayout{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 80%;
+    width: 80%;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#cameraView{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px 0 0 20px;
+    position: relative;
+}
+#controllers{
+    background-color: rgb(119, 119, 119);
+    width: 400px;
+    height: 100%;
+    padding: 0px 10px;
+    border-radius: 0 20px 20px 0;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+.controllerButton{
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+}
+.colorButton{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px;
+}
+#titleDiv{
+    flex-direction: row;
+    display: flex;
+    height: 20%;
+    width: 100%;
+}
+#titleNameDiv{
+    display: flex;
+    height: 100%;
+    width: 85%;
+    justify-content: left;
+    align-items: center;
+}
+#closeButtonDiv{
+    display: flex;
+    height: 100%;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+#closeButton{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    flex-shrink: 0;      /* Prevent shrinking */
+    flex-grow: 0;        /* Prevent growing */
+    box-sizing: border-box;
+}
+#partsDiv{
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    width: 100%;
+    overflow-y: auto; 
+}
+#bottomDiv{
+    display: flex;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Add this line */
+}
+a-scene {
+    overflow: hidden;
+    display: block;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+#canvasFg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#webcam {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
